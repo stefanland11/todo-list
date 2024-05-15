@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>    
+            <button class="todays-tasks">Today's Tasks</button>
+            <button class="upcoming-tasks">Upcoming</button>
+            <button class="completed-tasks">Completed Tasks</button>
+        </ul>
+        <button class="delete-project-button">Delete Current Project</button>
+        <ul class="projects-list"></ul>
+    </div>
+    <div class="main">
+       
+    </div>
+    <dialog id="new-todo-dialog">
+        <form id="todo-form">
+            <div>
+                <label for="todo-title">Todo:</label>
+                <input type="text" id="todo-title" name="todo-title">
+            </div>
+            <div>
+                <label for="notes">Notes:</label>
+                <input type="text" id="notes" name="notes">
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <p>
+                <label>
+                  Priority:
+                  <select id="priority">
+                    <option value="default">Choose…</option>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                  </select>
+                </label>
+              </p>
+              <button type="submit" class="todo-submit">Add</button>
+        </form>
+    </dialog>
+    <dialog id="new-project-dialog">
+        <form id="project-form">
+            <div>
+                <label for="project-title">Project Title:</label>
+                <input type="text" id="project-title" name="project-title">
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+            </div>
+            <button type="submit" value="Submit" class="project-submit">Add</button>
+        </form>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
